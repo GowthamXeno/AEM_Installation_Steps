@@ -32,6 +32,13 @@ This document outlines the steps to build and deploy an Adobe Experience Manager
 1.  **Download the project:**
     * Download the `mytraining.zip` file from [https://drive.google.com/file/d/1wF4lB945kYnnDrWOisoTI_OrIxOeOBAs/view?usp=sharing](https://drive.google.com/file/d/1wF4lB945kYnnDrWOisoTI_OrIxOeOBAs/view?usp=sharing).
     * Extract the contents of the zip file to your desired directory.
+  
+## AEM JAR Download
+
+* Download the AEM JAR file from [https://drive.google.com/file/d/1PCOw2aH8XMUO9swRLywKJ3K2HVxNuQY-/view?usp=sharing].
+* Rename the file to **`aem-author-p4502.jar`** and place it in the **`Author/`** folder.
+* Copy the same file to the **`Publish/`** folder and rename it to **`aem-publish-p4503.jar`**.
+
 
 ## Build and Deploy Commands
 
