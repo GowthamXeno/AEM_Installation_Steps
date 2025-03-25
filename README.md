@@ -49,7 +49,7 @@ This document outlines the steps to build and deploy an Adobe Experience Manager
     ```
     *or*
     ```bash
-    mvn clean install -PautoInstallPackage -Daem.port=4502 -DskipTests
+    mvn clean install -PautoInstallPackage -DskipTests
     ```
 
     * `mvn clean install`: Cleans the project and builds the package.
@@ -64,7 +64,7 @@ This document outlines the steps to build and deploy an Adobe Experience Manager
     ```
     *or*
     ```bash
-    mvn clean install -PautoInstallPackagePublish -Daem.port=4503 -DskipTests
+    mvn clean install -PautoInstallPackagePublish -DskipTests
     ```
 
     * `mvn clean install`: Cleans the project and builds the package.
