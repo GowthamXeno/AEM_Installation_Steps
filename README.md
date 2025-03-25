@@ -47,9 +47,13 @@ This document outlines the steps to build and deploy an Adobe Experience Manager
     ```bash
     mvn clean install -PautoInstallSinglePackage -Daem.port=4502 -DskipTests
     ```
+    *or*
+    ```bash
+    mvn clean install -PautoInstallPackage -Daem.port=4502 -DskipTests
+    ```
 
     * `mvn clean install`: Cleans the project and builds the package.
-    * `-PautoInstallSinglePackage`: Activates the profile to automatically install the package to AEM.
+    * `-PautoInstallSinglePackage`: Activates the profile to automatically install the single content package to AEM.
     * `-Daem.port=4502`: Specifies the AEM port for the author instance.
     * `-DskipTests`: Skips the unit tests during the build.
 
@@ -58,9 +62,13 @@ This document outlines the steps to build and deploy an Adobe Experience Manager
     ```bash
     mvn clean install -PautoInstallSinglePackage -Daem.port=4503 -DskipTests
     ```
+    *or*
+    ```bash
+    mvn clean install -PautoInstallPackagePublish -Daem.port=4503 -DskipTests
+    ```
 
     * `mvn clean install`: Cleans the project and builds the package.
-    * `-PautoInstallSinglePackage`: Activates the profile to automatically install the package to AEM.
+    * `-PautoInstallSinglePackage`: Activates the profile to automatically install the single content package to AEM.
     * `-Daem.port=4503`: Specifies the AEM port for the publish instance.
     * `-DskipTests`: Skips the unit tests during the build.
 
@@ -74,7 +82,7 @@ This document outlines the steps to build and deploy an Adobe Experience Manager
     * `-DskipTests`: Skips the unit tests during the build.
     * This command is for creating the package without deploying it directly to an AEM instance.
 
-4.  **Start AEM Author Instance (Port 4502):**
+5.  **Start AEM Author Instance (Port 4502):**
 
     ```bash
     java -jar aem-author-p4502.jar
@@ -82,7 +90,7 @@ This document outlines the steps to build and deploy an Adobe Experience Manager
 
     * Starts the AEM author instance using the provided JAR file.
 
-5.  **Start AEM Publish Instance (Port 4503):**
+6.  **Start AEM Publish Instance (Port 4503):**
 
     ```bash
     java -jar aem-publish-p4503.jar
